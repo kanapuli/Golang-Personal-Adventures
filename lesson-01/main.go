@@ -7,7 +7,7 @@ package main
 //import is used to import the standard libraries and third party packages.
 import (
 	"fmt"
-	
+	basics "github.com/Golang-The-Zen-Way-/lesson-01/catchthebasics"
 )
 
 //The program always start running from  the main function.
@@ -17,9 +17,9 @@ func main() {
 	fmt.Println("A journey of thousand  miles  starts with a single step")
 
 	//Call Another function from the function package from the file catchthebasics.go
-	//additonResult := basics.Add(4,6)
-	//fmt.Println(additonResult)
-	
+	additonResult := basics.Add(4, 6)
+	fmt.Println(additonResult)
+
 }
 
 /*The init function runs  even before the main function.  The init function can also be in other packages. So when importing  a package which contains
