@@ -1,17 +1,25 @@
 /*package  is used to organize your codes
-  The package 'main' code is always converted to an executable when running go build
+  The package 'main' code is always converted to an executable code when running go build
   This is  equivalent to the Java/C# namespaces
 */
 package main
 
 //import is used to import the standard libraries and third party packages.
-import "fmt"
+import (
+	"fmt"
+	
+)
 
 //The program always start running from  the main function.
 func main() {
 	//Package  fmt is the Standar library which helps in formatted input/output .  Similar to C's printf and scanf
 	//Println formats using the default format and  appends a new line character to the string by default
 	fmt.Println("A journey of thousand  miles  starts with a single step")
+
+	//Call Another function from the function package from the file catchthebasics.go
+	//additonResult := basics.Add(4,6)
+	//fmt.Println(additonResult)
+	
 }
 
 /*The init function runs  even before the main function.  The init function can also be in other packages. So when importing  a package which contains
