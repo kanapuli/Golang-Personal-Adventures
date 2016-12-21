@@ -17,9 +17,14 @@ func main() {
 	fmt.Println("A journey of thousand  miles  starts with a single step")
 
 	//Call Another function from the function package from the file catchthebasics.go
-	additonResult := basics.Add(4, 6)
-	fmt.Println(additonResult)
+	additonResult := basics.Add(100, 8)
+	fmt.Println("The Sacred Number in zen is ", additonResult)
 
+	//Call the SwapVariables  function from  the basics package
+	//This is an example to show that GO Functions can return multiple variables
+	a, b := basics.SwapVariables("Yin", "Yang")
+	//So the SwapVariables should return results such that a = Yang and b = Yin
+	fmt.Println("GoLang swaps ", a, " and ", b, "with ease . Follow Golang ! :)")
 }
 
 /*The init function runs  even before the main function.  The init function can also be in other packages. So when importing  a package which contains
