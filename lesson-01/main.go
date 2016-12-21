@@ -22,7 +22,7 @@ func main() {
 
 	//Call the SwapVariables  function from  the basics package
 	//This is an example to show that GO Functions can return multiple variables
-	a, b := basics.SwapVariables("Yin", "Yang")
+	a, b := basics.SwapVariables("Yang", "Yin")
 	//So the SwapVariables should return results such that a = Yang and b = Yin
 	fmt.Println("GoLang swaps ", a, " and ", b, "with ease . Follow Golang ! :)")
 }
@@ -41,5 +41,5 @@ func init() {
 	    %U -  Unicode format
 	    %e or  %E - Scientefic notation
 	    %s -  String */
-	fmt.Printf("%s", "Become a GoLang Monk. \n")
+	fmt.Printf("%s", "Here are the Lessons that will make you a Golang Monk. \n")
 }

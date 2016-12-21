@@ -15,3 +15,9 @@ The exported function should always have comment starting with the method name *
 func Add(x, y int) int {
 	return x + y
 }
+
+//Go Functions  can return multiple values and  the  return types  are specified inside the parantheses after the parameter lists
+//SwapVariables : Now Swapping vaiable is as  simple as this .
+func SwapVariables(x, y string) (string, string) {
+	return y, x
+}
