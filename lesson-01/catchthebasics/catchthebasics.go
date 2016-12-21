@@ -21,3 +21,11 @@ func Add(x, y int) int {
 func SwapVariables(x, y string) (string, string) {
 	return y, x
 }
+
+//Example for Naked Return
+//Naming Return Values  and concatenation of strinf
+func NameReturnValues(x, y string) (result string) {
+	result = x + " " + y
+	//When the return value is named ,  then just the return statement is enough .  That automatically returns z . This is naked return
+	return
+}

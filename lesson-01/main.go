@@ -25,6 +25,9 @@ func main() {
 	a, b := basics.SwapVariables("Yang", "Yin")
 	//So the SwapVariables should return results such that a = Yang and b = Yin
 	fmt.Println("GoLang swaps ", a, " and ", b, "with ease . Follow Golang ! :)")
+	//Call the NameReturnValues function
+	truth := basics.NameReturnValues("Show me the truth", "Master")
+	fmt.Println(truth)
 }
 
 /*The init function runs  even before the main function.  The init function can also be in other packages. So when importing  a package which contains
