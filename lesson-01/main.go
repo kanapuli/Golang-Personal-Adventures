@@ -28,6 +28,13 @@ func main() {
 	//Call the NameReturnValues function
 	truth := basics.NameReturnValues("Show me the truth", "Master")
 	fmt.Println(truth)
+	//Call the Variadic function from basics package
+	zenPrinciples1 := basics.VariadicFunction("Right Speech", "Right Behaviour", "Right Action", "Right Thinking")
+	zenPrinciples2 := basics.VariadicFunction("Right Attitude", "Right Contemplation")
+	fmt.Println("Zen Principles Wont Vary. But The Parameter List can vary for a GOlang Variadic Function")
+	fmt.Println(zenPrinciples1)
+	fmt.Println(zenPrinciples2)
+
 }
 
 /*The init function runs  even before the main function.  The init function can also be in other packages. So when importing  a package which contains

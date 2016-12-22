@@ -29,3 +29,18 @@ func NameReturnValues(x, y string) (result string) {
 	//When the return value is named ,  then just the return statement is enough .  That automatically returns z . This is naked return
 	return
 }
+
+//Example for Variadic Functions . These  Functions have variable number of Parameters . The Standard Println is a variadic function
+/* The syntax goes like this
+func funcname (paramname ... datatype) (return type)
+{
+	func body
+}
+*/
+func VariadicFunction(advices ...string) string {
+	intermediateString := ""
+	for _, advice := range advices {
+		intermediateString = intermediateString + ", " + advice
+	}
+	return "The Principles of Zen are " + intermediateString
+}
