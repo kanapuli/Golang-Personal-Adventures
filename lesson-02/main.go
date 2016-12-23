@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+
+	array "github.com/GoLang-The-Zen-Way-/lesson-02/array"
 )
 
 func main() {
@@ -17,6 +19,11 @@ func main() {
 	}
 	//In Golang ,  you can pass  a  function like a  value
 	manipulateValues(result)
+
+	/*  Lets  start  our  Array Lesson */
+	//So  an array package is  imported .
+	array.ArrayDeclaration()
+
 }
 
 //manipulateValue accepts a function as  a parameter
