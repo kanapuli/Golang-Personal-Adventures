@@ -44,5 +44,7 @@ func ArrayDeclaration() {
 		}
 
 	}
-
+	//Array Literal with [...] specifies array of variable length
+	myFourthArray := [...]int{23, 56, 89, 90, 89}
+	fmt.Println(len(myFourthArray))
 }
