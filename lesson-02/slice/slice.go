@@ -1,5 +1,7 @@
 package slice
 
+import "fmt"
+
 //array is used less in  golang .  Golang provides a new datatype built on top of 'array'type called slice
 //slices are arrays without limit .This allows to store elements with dynamic length.
 
@@ -17,13 +19,32 @@ func SliceDeclaration() {
 	//Monk : 'Make' Slice  . initialize a slice using a make function
 	//Monk :  myFirstSlice is declare  but if you try to assign values  , runtime  error will happen.
 	//Monk :  First it should be initialized using make function
-	myFirstSlice := make([]int, 3, 5)
+	myFirstSlice = make([]int, 3, 5)
 	//So a Slice make  function should have a length and capacity . here length  = 3 and capacity = 5
-	myFirstSlice := make([]int, 3)
+	for _, element := range myFirstSlice {
+		fmt.Println(element)
+	}
+	myFirstSlice = make([]int, 3)
 	//Here length =capacity  = 3
 	//Disciple :  Ok Monk Iam  clear about the make  functions. How will I assign values  to the slice
 	//Monk : Lemme  show  you
 	myFirstSlice[0] = 10
 	myFirstSlice[1] = 4
 	myFirstSlice[2] = 78
+	for _, element := range myFirstSlice {
+		fmt.Println(element)
+	}
+
+	//Monk: Yo Disciple ! There  is  another  way to create a slice . That is by using a slice literal
+	//This is similar to an array literal
+	sliceLiteral := []int{3, 4, 5} //  So here the length and capacity is 3
+	for _, literal := range sliceLiteral {
+		fmt.Println(literal)
+	}
+	//We can specify values to a particular index . Here the slice capacity become 20
+	sliceLiteral = []int{0: 10, 20: 90}
+	for _, literal := range sliceLiteral {
+		fmt.Println(literal)
+	}
+
 }
