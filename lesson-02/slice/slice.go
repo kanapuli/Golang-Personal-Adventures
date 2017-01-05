@@ -46,5 +46,19 @@ func SliceDeclaration() {
 	for _, literal := range sliceLiteral {
 		fmt.Println(literal)
 	}
+	//Enlarging  Slices  using  Copy and  Append  function
+	//Since  Slices  are dynamic  arrays  ,  we  can enlarge or  shrink the  slices
+	//Create  two slices
+	x := []int{10, 20, 30}
+	fmt.Printf("Slice x Length is  %d and  capacity is  %d \n", len(x), cap(x))
+	//Create  another slice y  where  the  length is 5  and  capacity is  10
+	y := make([]int, 5, 10)
+	//Call  the copy function  .  copy x  to y . syntax copy(destination, source)
+	copy(y, x)
+	fmt.Printf("Slice y Length is  %d and  capacity is  %d \n", len(y), cap(y))
+	fmt.Println("After Copying , the  contents  of  y are : ", y)
+	y[3] = 100
+	y[4] = 500
+	fmt.Println("After adding elements ,  the contents  of y are \n ,", y)
 
 }
