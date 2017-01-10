@@ -61,4 +61,18 @@ func SliceDeclaration() {
 	y[4] = 500
 	fmt.Println("After adding elements ,  the contents  of y are \n ,", y)
 
+	//Enlarging slice using an  append function
+	newSlice := make([]int, 3, 5)
+	newSlice[0] = 10
+	newSlice[1] = 11
+	fmt.Printf("The newSlice has the  length  %d and capacity %d \n\n", len(newSlice), cap(newSlice))
+	//Now call the append function
+	newSlice = append(newSlice, 30, 50, 69)
+	fmt.Printf("The newSlice has the  length  %d and capacity %d\n\n", len(newSlice), cap(newSlice))
+	//The append function automatically increases the slice capacity
+
+	//Iterating over Slice and  printing it
+	for k, v := range newSlice {
+		fmt.Printf("X[%d] = %d\n", k, v)
+	}
 }
