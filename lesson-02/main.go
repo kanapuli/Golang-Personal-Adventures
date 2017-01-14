@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	hashTable "github.com/Golang-The-Zen-Way-/lesson-02/hashtable"
+
 	array "github.com/GoLang-The-Zen-Way-/lesson-02/array"
 	slice "github.com/Golang-The-Zen-Way-/lesson-02/slice"
 )
@@ -27,6 +29,8 @@ func main() {
 
 	/*Lets learn about slice  */
 	slice.SliceDeclaration()
+	/*map declaration */
+	hashTable.HashDeclaration()
 
 }
 
