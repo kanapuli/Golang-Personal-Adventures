@@ -25,4 +25,14 @@ func HashDeclaration() {
 	}
 	fmt.Println(language)
 	fmt.Println(language["FR"])
+
+	/*Maps  provide  fastre  lookup  of  the  data  A lookup can be  performed by the  following way .*/
+	if lng, ok := language["EN-IN"]; ok {
+		fmt.Println(lng)
+	}
+	if lng, ok := language["ESP"]; ok {
+		fmt.Println(lng)
+	} else {
+		fmt.Println("Dictionary key not found")
+	}
 }
