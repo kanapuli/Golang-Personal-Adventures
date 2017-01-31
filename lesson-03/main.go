@@ -15,4 +15,7 @@ func main() {
 	fmt.Println(result)
 	result = cf.Switchcase(10)
 	fmt.Println(result)
+
+	//call the if-else block from cf package to execute its function
+	cf.DecisonStatements()
 }
